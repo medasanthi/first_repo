@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+int my_memcpy(char *dst,const char *src, size_t len);
+int main()
+{
+	char src[10],dst[10];
+	int len;
+	printf("enter the string \n");
+	scanf("%s",src);
+	printf("enter the len\n");
+	scanf("%d",&len);
+	my_memcpy(dst,src,len);
+	printf("%s",dst);
+}
+ my_memcpy(char *dst,const char *src, size_t len)
+ {
+ 	int i;
+ 	for(i=0;src[i]!='\0',i<len;i++)
+ 	{
+ 		dst[i]=src[i];
+ 	}
+ 	dst[i]='\0';
+ 	return dst[i];
+ 	
+ }
